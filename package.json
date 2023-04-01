@@ -1,0 +1,30 @@
+{
+  "name": "quackathon2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build":"npx tailwindcss -i ./css/input.css -o ./css/output.css",
+    "watch":"npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndomvi/quackathon2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndomvi/quackathon2023/issues"
+  },
+  "homepage": "https://github.com/ndomvi/quackathon2023#readme",
+  "dependencies": {
+    "daisyui": "^2.51.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
