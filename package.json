@@ -1,30 +1,29 @@
 {
   "name": "quackathon2023",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon server.js",
-    "build":"npx tailwindcss -i ./css/input.css -o ./css/output.css",
-    "watch":"npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ndomvi/quackathon2023.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ndomvi/quackathon2023/issues"
-  },
-  "homepage": "https://github.com/ndomvi/quackathon2023#readme",
   "dependencies": {
-    "daisyui": "^2.51.5",
-    "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.5",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.1.4"
   }
 }
